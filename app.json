@@ -1,0 +1,9 @@
+{
+    "name": "Q Hub Backend",
+    "description": "Q Hub Backend",
+    "keywords": [
+      "Node"
+    ],    
+    "repository": "https://github.com/vishal-webwerks/Q_hub_backend.git",
+    "logo": "http://via.placeholder.com/50x50"
+}
