@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 var session = require("express-session")
 var passport = require('passport');
 var jwt = require('jsonwebtoken');
+require("dotenv").config();
 
 var mongoDB = 'mongodb://meanapp_u:meanapp_u@ds149535.mlab.com:49535/mean_app';
 mongoose.connect(mongoDB, { useMongoClient: true });
@@ -16,7 +17,8 @@ mongoose.connect(mongoDB, { useMongoClient: true });
 app.use(cors());
 
 app.get('/', function(req, res){
-   res.send("Hello world!");
+    console.log('Port', process.env.PORT);
+    res.send("Hello world!");
 });
 
 app.use(express.static("public"));
@@ -60,4 +62,4 @@ app.post('/authenticate', function(req, res){
 });
 
 
-app.listen(process.env.port || 5000);
+app.listen(process.env.PORT || 3000);

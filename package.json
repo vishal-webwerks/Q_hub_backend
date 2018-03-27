@@ -12,6 +12,7 @@
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.1",
     "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
     "express": "^4.15.4",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.1.0",
