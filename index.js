@@ -11,7 +11,7 @@ var passport = require('passport');
 var jwt = require('jsonwebtoken');
 require("dotenv").config();
 
-var mongoDB = 'mongodb://meanapp_u:meanapp_u@ds149535.mlab.com:49535/mean_app';
+var mongoDB = 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@ds149535.mlab.com:49535/'+process.env.DB_NAME;
 mongoose.connect(mongoDB, { useMongoClient: true });
 
 app.use(cors());
